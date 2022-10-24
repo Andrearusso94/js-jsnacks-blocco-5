@@ -33,3 +33,11 @@ for (let i = 1; i <= 10; i++) {
     firstArr.push(i);
     
 }
+
+
+//creo variabili numeriche
+const numA = 4;
+const numB = 8
+
+const newArr = myArr(firstArr, numA, numB)
+console.log(newArr)
