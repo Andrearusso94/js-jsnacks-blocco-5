@@ -8,7 +8,7 @@ compresa tra “a” e “b”*/
 
 
 
-function myArr (element, firstNum, secondNum) {
+function myArr (arr, firstNum, secondNum) {
     
     //creo primo array
     const newArr = [];
@@ -17,8 +17,8 @@ function myArr (element, firstNum, secondNum) {
        
         //chiedo se il numero a è più piccolo di b e inserisco l'eventuale numero dentro l'array
 
-        if (firstNum < element[i] && secondNum >= element[i]) {
-            newArr.push(elment[i])
+        if (firstNum < arr[i] && secondNum >= arr[i]) {
+            newArr.push(arr[i]);
         }
         
     }
@@ -37,7 +37,7 @@ for (let i = 1; i <= 10; i++) {
 
 //creo variabili numeriche
 const numA = 4;
-const numB = 8
+const numB = 8;
 
 const newArr = myArr(firstArr, numA, numB)
 console.log(newArr)
