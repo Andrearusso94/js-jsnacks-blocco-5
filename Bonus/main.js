@@ -26,7 +26,7 @@ const usersCar = [];
 
 for (let i = 0; i < users.length; i++){
     if (users[i].età >= 20){
-        usersCar.push(users[i])
+        usersCar.push(users[i].nome + users[i].cognome  + 'tu puoi guidare')
     console.log(users[i].nome + users[i].cognome + 'tu puoi guidare')
     }
 
