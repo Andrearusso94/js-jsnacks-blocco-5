@@ -13,7 +13,7 @@ function myArr (arr, firstNum, secondNum) {
     //creo primo array
     const newArr = [];
 
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < 100; i++) {
        
         //chiedo se il numero a è più piccolo di b e inserisco l'eventuale numero dentro l'array
 
@@ -29,15 +29,15 @@ function myArr (arr, firstNum, secondNum) {
 //creo secondo array
 const firstArr =[];
 
-for (let i = 1; i <= 10; i++) {
+for (let i = 1; i <= 100; i++) {
     firstArr.push(i);
     
 }
 
 
 //creo variabili numeriche
-const numA = 4;
-const numB = 8;
+const numA = 20;
+const numB = 35;
 
 const newArr = myArr(firstArr, numA, numB)
 console.log(newArr)
