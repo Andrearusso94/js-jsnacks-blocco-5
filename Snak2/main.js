@@ -55,3 +55,32 @@ let zucchine = [
              },
 
  ]
+
+ // Dividi in due array separati le zucchine che misurano meno o più di 15cm. 
+
+const zucchineMin = [];
+const zucchineMax = [];
+for(var i=0; i<zucchine.length; i++){
+    if (zucchine[i].lunghezza < 15){
+        zucchineMin.push(zucchine[i])
+    } else {
+        zucchineMax.push(zucchine[i])
+    }
+}
+ console.log(zucchineMin);
+ console.log(zucchineMax);
+
+ // Stampa separatamente quanto pesano i due gruppi di zucchine
+//calcolo peso zucchinemin
+pesoMin = 0;
+for(let i=0; i<zucchineMin.length; i++){
+    pesoMin += zucchineMin[i].peso
+}
+console.log('Il peso delle zucchine è ' + pesoMin + 'kg');
+
+//calcolo peso zucchine lunghe
+pesoMax = 0;
+for(var i=0; i<zucchineMax.length; i++){
+    pesoMax += zucchineMax[i].peso
+}
+console.log('Il peso zucchine è ' + pesoMax + 'kg');
